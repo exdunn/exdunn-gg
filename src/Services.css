@@ -1,0 +1,55 @@
+.services {
+  background-color: skyblue;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  text-align: center;
+}
+
+.services h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: orangered;
+  margin: 0;
+  padding: 0;
+}
+
+.services h2 {
+  color: #fff;
+  font-size: 48px;
+  margin-bottom: 48px;
+  margin-top: 0;
+}
+
+.services > .row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.services > .row span {
+  background-color: #fff;
+  width: 112px;
+  height: 112px;
+  display: inline-block;
+  border-radius: 50%;
+  color: skyblue;
+  font-size: 36px;
+  line-height: 112px;
+}
+
+.services > .row h4 {
+  margin-bottom: 8px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #fff;
+  font-size: 24px;
+}
+
+.services > .row p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.services > .row p i {
+  color: red;
+}

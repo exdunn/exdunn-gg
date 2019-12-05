@@ -16,10 +16,10 @@ header p {
 }
 
 header a {
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
   font-weight: 700;
-  background-color: #1d809f;
-  border-color: #1d809f;
+  background-color: skyblue;
+  border-color: skyblue;
   color: #fff;
   padding: 1.25rem 2.5rem;
   text-decoration: none;

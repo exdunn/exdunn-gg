@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Background from "./img/test.jpg";
+import Background from "./img/triangles.jpg";
 import "./Header.css";
 
 const myStyles = {
