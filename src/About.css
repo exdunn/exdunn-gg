@@ -1,0 +1,20 @@
+section {
+  padding: 70px 0 70px 0;
+  color: #616161;
+  line-height: 11pt;
+  position: relative;
+}
+section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

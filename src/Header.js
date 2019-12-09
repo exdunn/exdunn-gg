@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Particles from "react-particles-js";
 import "./Header.css";
+import Navigation from "./Navigation";
 
 const particleOpt = {
   particles: {
@@ -28,12 +29,15 @@ const particleOpt = {
 class Header extends Component {
   render() {
     return (
-      <div className="canvas">
-        <div className="content">
-          <span>Hello, I'm Alex Dunn, a Software Engineer.</span>
+      <section id="home" className="flex height-fix">
+        <div className="canvas">
+          <Particles params={particleOpt} />
+          <div className="content">
+            <span>Hello, I'm Alex Dunn, Software Engineer.</span>
+          </div>
         </div>
-        <Particles params={particleOpt} />
-      </div>
+        <Navigation />
+      </section>
     );
   }
 }

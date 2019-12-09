@@ -1,7 +1,4 @@
 import React, { Component } from "react";
-
-// import "./App.css";
-
 import "./Navigation.css";
 
 class Navigation extends Component {
@@ -9,17 +6,15 @@ class Navigation extends Component {
     const pages = ["Home", "About", "Portfolio", "Contact"];
     const navLinks = pages.map(page => {
       return (
-        <li className="label">
-          <a className="navLink" href={"#" + page}>
-            {page}
-          </a>
-        </li>
+        <a className="page-link" dest={"#" + page}>
+          {page}
+        </a>
       );
     });
 
     return (
       <nav>
-        <ul>{navLinks}</ul>
+        <div className="link-wrap">{navLinks}</div>
       </nav>
     );
   }
