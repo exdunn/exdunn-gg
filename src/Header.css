@@ -1,28 +1,24 @@
-header {
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 300px;
-}
-
-header h1 {
+.canvas {
   margin: 0;
-  font-size: 4rem;
+  padding: 0;
+  background: linear-gradient(
+    to right,
+    rgba(34, 118, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  justify-content: center;
 }
 
-header p {
-  font-size: 1.75rem;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-
-header a {
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
-  font-weight: 700;
-  background-color: skyblue;
-  border-color: skyblue;
+span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
   color: #fff;
-  padding: 1.25rem 2.5rem;
-  text-decoration: none;
-  border-radius: 0.5rem;
-  display: inline-block;
+  text-align: center;
+  font-weight: 325;
+  font-size: 50px;
+  letter-spacing: 5px;
+  margin-top: -60px;
+  padding-left: 10px;
 }

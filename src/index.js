@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-// import App from "./App";
 import Navigation from "./Navigation";
 import Header from "./Header";
 import Services from "./Services";
+import Parallax from "./Parallax";
+import Canvas from "./Canvas";
 import * as serviceWorker from "./serviceWorker";
 
 // #dab0fc light violet
@@ -16,9 +17,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navigation title="Exdunn Portfolio" />
-        <Header title="Portfolio" button="Find Out More" />
-        <Services></Services>
+        <Navigation />
+        <Header />
       </div>
     );
   }
