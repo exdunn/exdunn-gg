@@ -11,38 +11,120 @@ section:nth-of-type(1) {
   height: calc(100vh + 53px);
 }
 
-.flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .canvas {
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100%;
-  background: linear-gradient(
-    to right,
-    #070099,
-    #005adb,
-    #0090e4,
-    #00c0c5,
-    #12eba0
-  );
+  background-image: linear-gradient(
+      to bottom,
+      rgba(129, 0, 214, 0.7),
+      rgba(0, 3, 187, 0.6)
+    ),
+    url("./img/cp1.jpg");
+  background-size: cover;
 }
 
-span {
+.textbox {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 0;
   right: 0;
   color: #fff;
   text-align: center;
-  font-weight: 325;
-  font-size: 50px;
-  letter-spacing: 5px;
-  padding-left: 10px;
+}
+
+.heading-primary {
+  text-transform: uppercase;
+  vertical-align: top;
+}
+
+.heading-primary-main {
+  line-height: 1.5;
+  display: block;
+  font-size: 4.5rem;
+  font-weight: 400;
+  letter-spacing: 0.6rem;
+  animation: leftIn 0.75s ease-out;
+  animation-duration: 0.75s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: leftIn;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 100;
+  letter-spacing: 0.3rem;
+  animation: rightIn 0.75s ease-out;
+  animation-duration: 0.75s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: rightIn;
+}
+
+@keyframes bottomIn {
+  0% {
+    opacity: 0;
+    transform: translatey(10rem);
+  }
+  80% {
+    transform: translatey(-0.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes topIn {
+  0% {
+    opacity: 0;
+    transform: translatey(-10rem);
+  }
+  80% {
+    transform: translatey(0.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes leftIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-5rem);
+  }
+  80% {
+    transform: translateX(0.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes rightIn {
+  0% {
+    opacity: 0;
+    transform: translateX(5rem);
+  }
+  80% {
+    transform: translateX(-0.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }

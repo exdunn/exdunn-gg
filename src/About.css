@@ -1,20 +1,118 @@
-section {
-  padding: 70px 0 70px 0;
-  color: #616161;
-  line-height: 11pt;
-  position: relative;
-}
-section .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 10px;
-  width: 100%;
-  box-sizing: border-box;
+.section-about {
+  background-color: #f7f7f7;
+  line-height: 1.7rem;
 }
 
-.flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.container {
+  color: #666666;
+}
+
+.container > h2 {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.profile-pic {
+  animation: bottomIn 0.75s ease-out;
+  animation-duration: 0.75s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: bottomIn;
+}
+
+.profile-pic > img {
+  height: 25rem;
+  border-radius: 20%;
+  margin-bottom: 1rem;
+}
+
+.profile-content-1 {
+  max-width: 20rem;
+  animation: topIn 0.75s ease-out;
+  animation-duration: 0.75s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: topIn;
+}
+
+.profile-content-1 > h4 {
+  text-transform: uppercase;
+  font-weight: 200px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.paragraph {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.icon-card {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.row {
+  margin: 0 auto;
+}
+
+.profile-content-2.start {
+  animation: bottomIn 0.75s ease-out;
+  animation-duration: 0.75s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: bottomIn;
+}
+
+.profile-content-2 > h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+}
+
+.paragraph:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.skillbars {
+  max-width: 80%;
+  margin-left: 5%;
+}
+
+.skillbar {
+  margin-bottom: 0.5rem;
+}
+
+.skillbar > h4 {
+  font-size: 1.2rem;
+}
+
+.service-icon {
+  background-color: #fff;
+  color: #1d809f;
+  height: 7rem;
+  width: 7rem;
+  display: block;
+  line-height: 7.5rem;
+  font-size: 2.25rem;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+span {
+  color: skyblue;
+  font-size: 5rem;
 }

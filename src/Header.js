@@ -26,14 +26,19 @@ const particleOpt = {
   }
 };
 
+const canvasStyle = {};
+
 class Header extends Component {
   render() {
     return (
-      <section id="home" className="flex height-fix">
+      <section id="home">
         <div className="canvas">
           <Particles params={particleOpt} />
-          <div className="content">
-            <span>Hello, I'm Alex Dunn, Software Engineer.</span>
+          <div className="textbox">
+            <h1 className="heading-primary">
+              <span className="heading-primary-main"> Alex Dunn</span>
+              <span className="heading-primary-sub">Software Engineer</span>
+            </h1>
           </div>
         </div>
         <Navigation />

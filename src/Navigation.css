@@ -14,8 +14,12 @@ nav {
   align-items: start;
 }
 
-nav .link-wrap > a {
-  padding: 12px 20px;
+nav .nav-wrap {
+  padding-top: 1rem;
+}
+
+nav .nav-wrap > a {
+  padding: 15px;
   font-size: 16pt;
   letter-spacing: 1px;
   cursor: pointer;
@@ -23,6 +27,6 @@ nav .link-wrap > a {
   text-transform: uppercase;
 }
 
-.page-link:hover {
+nav .nav-wrap > a:hover {
   color: #12eba0;
 }

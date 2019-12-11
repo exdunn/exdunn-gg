@@ -22,7 +22,7 @@
 
 .services > .row {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 
 .services > .row span {
