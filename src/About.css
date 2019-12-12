@@ -56,11 +56,6 @@
   text-align: center;
 }
 
-.icon-card {
-  flex-basis: 0;
-  flex-grow: 1;
-}
-
 .row {
   margin: 0 auto;
 }
@@ -101,9 +96,21 @@
   font-size: 1.2rem;
 }
 
+.row.icons {
+  margin-top: 2rem;
+}
+
+.icon-card {
+  text-align: center;
+}
+
+.icon-card i {
+  color: #17a2b8;
+}
+
 .service-icon {
   background-color: #fff;
-  color: #1d809f;
+  color: #17a2b8;
   height: 7rem;
   width: 7rem;
   display: block;
@@ -113,6 +120,5 @@
 }
 
 span {
-  color: skyblue;
   font-size: 5rem;
 }

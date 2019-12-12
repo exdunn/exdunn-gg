@@ -26,8 +26,6 @@ const particleOpt = {
   }
 };
 
-const canvasStyle = {};
-
 class Header extends Component {
   render() {
     return (

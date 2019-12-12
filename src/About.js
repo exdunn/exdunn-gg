@@ -10,6 +10,7 @@ class About extends Component {
       res.push(
         <IconCard
           image={iconObjs[i].image}
+          link={iconObjs[i].link}
           title={iconObjs[i].title}
           description={iconObjs[i].description}
         />
@@ -49,7 +50,7 @@ class About extends Component {
               </div>
             </div>
           </div>
-          <div className="row">{this.makeIcons(iconObjs)}</div>
+          <div className="row icons">{this.makeIcons(iconObjs)}</div>
         </div>
       </section>
     );
@@ -79,9 +80,11 @@ class IconCard extends Component {
   state = {};
   render() {
     return (
-      <div>
+      <div className="col icon-card">
         <span>
-          <i className={this.props.image}></i>
+          <a href={this.props.link} target="_">
+            <i className={this.props.image}></i>
+          </a>
         </span>
         <h4>{this.props.title}</h4>
         <p>{this.props.description}</p>
@@ -92,23 +95,22 @@ class IconCard extends Component {
 
 const iconObjs = [
   {
-    image: "fas fa-question-circle",
+    image: "fab fa-github",
+    link: "https://github.com/exdunn",
     title: "Responsive",
     description:
       "the cat in the hat is black but the orange tastes like cream soda."
   },
   {
-    image: "fas fa-question-circle",
+    image: "far fa-file",
+    link: "https://www.linkedin.com/in/alex-dunn-46766554/",
+
     title: "Responsive",
     description: "Looks great on any screen size!"
   },
   {
-    image: "fas fa-question-circle",
-    title: "Responsive",
-    description: "Looks great on any screen size!"
-  },
-  {
-    image: "fas fa-question-circle",
+    image: "fab fa-linkedin-in",
+    link: "https://www.linkedin.com/in/alex-dunn-46766554/",
     title: "Responsive",
     description: "Looks great on any screen size!"
   }
