@@ -9,11 +9,11 @@ const particleOpt = {
       value: 100,
       density: {
         enable: true,
-        value_area: 800
+        value_area: 700
       }
     },
     size: {
-      value: 3
+      value: 5
     }
   },
   interactivity: {
