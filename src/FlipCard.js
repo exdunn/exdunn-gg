@@ -14,7 +14,12 @@ class FlipCard extends Component {
           </div>
         </div>
         <div className="card-side back" style={this.props.backStyle}>
-          <div className="card-body">back stuff</div>
+          <div className="card-body">
+            <h3>back stuff</h3>
+            <a href={this.props.btnLink} className="btn btn-light btn-lg">
+              button
+            </a>
+          </div>
         </div>
       </div>
     );

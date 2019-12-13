@@ -28,13 +28,24 @@
   line-height: 1.2rem;
 }
 
-/* .card-side.back {
-  background-image: linear-gradient(
-    to right bottom,
-    #eca026,
-    rgba(185, 19, 19, 0.911)
-  );
-} */
+.card-side.back > .card-body {
+  text-align: center;
+}
+
+.card-side.back > .card-body > .btn {
+  border-radius: 10rem;
+  text-transform: uppercase;
+  color: #777;
+  text-decoration: none;
+  padding: 1rem 4rem;
+  transition: all 0.2s;
+  font-size: 1.6rem;
+}
+
+.card-side.back > .card-body > .btn:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.21);
+  transform: translateY(-2px);
+}
 
 .card-side.back {
   transform: rotateY(180deg);
