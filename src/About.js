@@ -21,7 +21,7 @@ class About extends Component {
 
   render() {
     return (
-      <section className="section-about">
+      <section className="section-about" id="about">
         <div className="container">
           <h2>About</h2>
           <div className="row">

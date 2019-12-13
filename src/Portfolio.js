@@ -7,13 +7,15 @@ class Portfolio extends Component {
   state = {};
   render() {
     return (
-      <section className="section-portfolio">
+      <section className="section-portfolio" id="portfolio">
         <div className="row">
           <FlipCard
             image={city}
-            title="title"
+            title="Exalt Ladder"
+            details={details}
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam malesuada tempor. Etiam vulputate posuere enim ut viverra."
             backStyle={backStyle}
+            btnText="demo"
           />
         </div>
       </section>
@@ -27,3 +29,5 @@ const backStyle = {
   backgroundImage:
     "linear-gradient(to right bottom, #eca026, rgba(185, 19, 19, 0.911))"
 };
+
+const details = ["react", "JavaScript"];
