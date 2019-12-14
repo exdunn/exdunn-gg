@@ -6,19 +6,18 @@ class FlipCard extends Component {
     return (
       <div className="card border-0">
         <div className="card-side front">
-          <div className="card-picture">&nbsp;</div>
-          <h4 className="card-heading">{this.props.title}</h4>
-          <div class="card-details">
+          <div className="card-picture" style={this.props.backgroundImage}>
+            &nbsp;
+          </div>
+          <h5 className="card-heading">
+            <span>{this.props.title}</span>
+          </h5>
+          <div className="card-details">
             <ul>
               {this.props.details.map(det => (
                 <li>{det}</li>
               ))}
             </ul>
-          </div>
-          <img className="card-img-top" src={this.props.image}></img>
-          <div className="card-body">
-            <h5 className="card-title">{this.props.title}</h5>
-            <p className="card-text">{this.props.text}</p>
           </div>
         </div>
         <div className="card-side back" style={this.props.backStyle}>

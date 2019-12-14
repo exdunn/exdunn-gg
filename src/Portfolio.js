@@ -12,6 +12,7 @@ class Portfolio extends Component {
           <FlipCard
             image={city}
             title="Exalt Ladder"
+            backgroundImage={backgroundImage}
             details={details}
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam malesuada tempor. Etiam vulputate posuere enim ut viverra."
             backStyle={backStyle}
@@ -25,9 +26,13 @@ class Portfolio extends Component {
 
 export default Portfolio;
 
+const backgroundImage = {
+  backgroundImage: `linear-gradient(to right bottom, #eca026, rgba(185, 19, 0.911)), url(${city})`
+};
+
 const backStyle = {
   backgroundImage:
     "linear-gradient(to right bottom, #eca026, rgba(185, 19, 19, 0.911))"
 };
 
-const details = ["react", "JavaScript"];
+const details = ["React", "JavaScript", "Path of Exile API", "Express"];
