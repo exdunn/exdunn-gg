@@ -38,7 +38,7 @@ const popups = [
     title: "Exalt Lader",
     demo: ExaltLadderDemo,
     body:
-      "Displays character ranking and player information of top Path of Exile players."
+      "Web app displaying player character info in Path of Exile. Orders characters by level and supports filtering by name, status, class, etc."
   }
 ];
 

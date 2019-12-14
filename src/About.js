@@ -58,7 +58,7 @@ class About extends Component {
               </div>
             </div>
           </div>
-          <div className="row icons">{this.makeIcons(iconObjs)}</div>
+          <div className="row icons">{this.makeIcons()}</div>
         </div>
       </section>
     );

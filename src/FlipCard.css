@@ -1,33 +1,26 @@
 .card {
-  width: 18rem;
-  height: 25rem;
+  height: 40rem;
 }
 
 .card-heading {
   font-weight: 400;
   text-transform: uppercase;
-  text-align: right;
+  text-align: center;
   color: #fff;
   position: absolute;
   top: 2rem;
-  right: 2rem;
-  width: 70%;
+  width: 100%;
   line-height: 3rem;
 }
 
 .card-heading span {
-  font-size: 1.5rem;
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(57, 107, 42, 0.9),
-    rgba(27, 46, 33, 0.9)
-  );
+  font-size: 2rem;
 }
 
 .card-side {
   color: rgb(49, 49, 49);
   font-size: 2rem;
-  height: 25rem;
+  height: 28rem;
   transition: all 0.8s ease;
   position: absolute;
   top: 0;
@@ -42,7 +35,7 @@
 .card-picture {
   background-size: cover;
   background-position: center center;
-  height: 10rem;
+  height: 13rem;
   background-blend-mode: screen;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -81,6 +74,8 @@
 }
 
 .card-side.back > .card-body {
+  position: absolute;
+  top: 10%;
   text-align: center;
 }
 
@@ -92,6 +87,13 @@
   padding: 1rem 4rem;
   transition: all 0.2s;
   font-size: 1.6rem;
+}
+
+.card-description {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .card-side.back > .card-body > .btn:hover {

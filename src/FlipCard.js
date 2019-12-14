@@ -6,11 +6,11 @@ class FlipCard extends Component {
     return (
       <div className="card border-0">
         <div className="card-side front">
-          <div className="card-picture" style={this.props.backgroundImage}>
+          <div className="card-picture" style={this.props.image}>
             &nbsp;
           </div>
           <h5 className="card-heading">
-            <span>{this.props.title}</span>
+            <span style={this.props.textBackground}>{this.props.title}</span>
           </h5>
           <div className="card-details">
             <ul>
@@ -20,11 +20,13 @@ class FlipCard extends Component {
             </ul>
           </div>
         </div>
-        <div className="card-side back" style={this.props.backStyle}>
+        <div className="card-side back" style={this.props.backGradient}>
           <div className="card-body">
-            <h3>back stuff</h3>
+            <div className="card-description">
+              <p>{this.props.text}</p>
+            </div>
             <a className="btn btn-light btn-lg" href="#popup">
-              {this.props.btnText}
+              {this.props.btnName}
             </a>
           </div>
         </div>
