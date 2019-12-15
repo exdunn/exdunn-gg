@@ -12,7 +12,7 @@ class Popup extends Component {
       <div className="popup" id="popup">
         <div className="popup-content">
           <div className="popup-left">
-            <a href="portfolio">
+            <a href="#portfolio">
               <img src={this.props.demo} class="popup-image"></img>
             </a>
           </div>
@@ -22,6 +22,9 @@ class Popup extends Component {
             </a>
             <h3 className="popup-header">{this.props.title}</h3>
             <p>{this.props.body}</p>
+            <a className="btn btn-light btn-lg" href={this.props.link}>
+              {this.props.btnName}
+            </a>
           </div>
         </div>
       </div>

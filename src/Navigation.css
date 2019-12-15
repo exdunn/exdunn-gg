@@ -14,14 +14,14 @@ nav {
   align-items: start;
 }
 
-nav .nav-wrap {
+.nav-wrap {
   padding-top: 1rem;
+  padding-left: 5%;
 }
 
 nav .nav-wrap > a {
   padding: 15px;
   font-size: 16pt;
-  letter-spacing: 1px;
   cursor: pointer;
   transition: color 0.5s;
   text-transform: uppercase;

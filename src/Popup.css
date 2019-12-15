@@ -56,6 +56,30 @@
   padding: 1rem 3rem;
 }
 
+.popup-right > h3 {
+  background-image: linear-gradient(to right bottom, #838383, #2e2e2e);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2.5rem;
+}
+
+.popup-right > p {
+  font-size: 1.3rem;
+  color: #777;
+  margin-bottom: 2rem;
+}
+
+.popup-right > .btn {
+  border-radius: 10rem;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right bottom, #838383, #2e2e2e);
+  color: white;
+  text-decoration: none;
+  padding: 1rem 4rem;
+  transition: all 0.2s;
+  font-size: 1.6rem;
+}
+
 .popup-close:link,
 .popup-close:visited {
   color: #777;

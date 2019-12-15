@@ -3,6 +3,10 @@
   line-height: 1.7rem;
 }
 
+.section-about > .container > .row:not(:last-child) {
+  margin-bottom: 5rem;
+}
+
 .container {
   color: #666666;
 }
@@ -11,7 +15,7 @@
   font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 .profile-pic {

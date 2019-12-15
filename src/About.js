@@ -25,25 +25,22 @@ class About extends Component {
         <div className="container">
           <h2>About</h2>
           <div className="row">
-            <div className="profile-pic">
+            <div className="col profile-pic">
               <img src={myPic} />
             </div>
             <div className="col profile-content-1">
               <h4>.NET Developer by Day</h4>
               <p className="paragraph">
                 As a software engineer at
-                <a href="https://www.meridianlink.com">MeridianLink</a>, I've
+                <a href="https://www.meridianlink.com"> MeridianLink</a>, I've
                 gained firsthand experience developing backend APIs and working
                 with clients to deliver software that best satisfies their
                 requirements.
               </p>
               <h4>React Ninja by night</h4>
               <p className="paragraph">
-                As a software engineer at
-                <a href="https://www.meridianlink.com">MeridianLink</a>, I've
-                gained firsthand experience developing backend APIs and working
-                with clients to deliver software that best satisfies their
-                requirements.
+                Passionate about leveraging modern frameworks and creating an
+                aesthetic user experience.
               </p>
             </div>
             <div className="col profile-content-2">

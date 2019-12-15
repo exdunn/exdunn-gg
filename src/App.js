@@ -15,6 +15,8 @@ class App extends Component {
           demo={popups[i].demo}
           title={popups[i].title}
           body={popups[i].body}
+          btnName={popups[i].btnName}
+          link={popups[i].link}
         />
       );
       return res;
@@ -35,10 +37,12 @@ class App extends Component {
 
 const popups = [
   {
-    title: "Exalt Lader",
+    title: "Exalt Ladder",
     demo: ExaltLadderDemo,
     body:
-      "Web app displaying player character info in Path of Exile. Orders characters by level and supports filtering by name, status, class, etc."
+      "Leaderboard displaying character info from Path of Exile. Orders characters by level and supports filtering by name, status, class, etc.",
+    btnName: "Source Code",
+    link: "https://github.com/exdunn/exalt-ladder"
   }
 ];
 

@@ -50,11 +50,11 @@ const flipCardObjs = [
     details: ["React", "JavaScript", "Express", "Path of Exile API"],
     backGradient: {
       backgroundImage:
-        "linear-gradient(0deg, rgba(46,14,105,.8) 0%, rgba(101,6,6,) 100%)"
+        "linear-gradient(0deg, rgba(46,14,105,.8) 0%, rgba(101,6,6,.8) 100%)"
     },
     btnName: "Demo",
     text:
-      "Web app displaying player character info in Path of Exile. Orders characters by level and supports filtering by name, status, class, etc.",
+      "Leaderboard displaying character info from Path of Exile. Orders characters by level and supports filtering by name, status, class, etc.",
     textBackground: {
       background:
         "linear-gradient(0deg, rgba(46,14,105,1) 0%, rgba(101,6,6,1) 100%)"
