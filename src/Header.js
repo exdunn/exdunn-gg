@@ -29,7 +29,7 @@ const particleOpt = {
 class Header extends Component {
   render() {
     return (
-      <section id="header">
+      <section id="home">
         <div className="canvas">
           <Particles params={particleOpt} />
           <div className="textbox">

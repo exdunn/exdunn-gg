@@ -1,4 +1,3 @@
-.section-portfolio > .row {
+.section-portfolio > .container > .row {
   max-width: 80rem;
-  margin: auto;
 }

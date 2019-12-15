@@ -50,7 +50,7 @@
 }
 
 .popup-right {
-  width: 30%;
+  width: 25%;
   vertical-align: middle;
   display: table-cell;
   padding: 1rem 3rem;
@@ -78,6 +78,12 @@
   padding: 1rem 4rem;
   transition: all 0.2s;
   font-size: 1.6rem;
+}
+
+.popup-right > .btn:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.21);
+  transform: translateY(-2px);
+  color: white;
 }
 
 .popup-close:link,

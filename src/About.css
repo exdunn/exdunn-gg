@@ -107,6 +107,11 @@
 
 .icon-card i {
   color: #17a2b8;
+  transition: all 0.3s;
+}
+
+.icon-card i:hover {
+  transform: scale(1.2);
 }
 
 .service-icon {

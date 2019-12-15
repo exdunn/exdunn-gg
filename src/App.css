@@ -5,3 +5,7 @@
 div {
   display: block;
 }
+
+html {
+  scroll-behavior: smooth;
+}

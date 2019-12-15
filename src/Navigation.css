@@ -25,8 +25,17 @@ nav .nav-wrap > a {
   cursor: pointer;
   transition: color 0.5s;
   text-transform: uppercase;
+  text-decoration: none;
+  color: white;
 }
 
 nav .nav-wrap > a:hover {
   color: #12eba0;
+}
+
+nav.fixed {
+  top: 0;
+  bottom: inherit;
+  left: 0;
+  position: fixed;
 }

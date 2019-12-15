@@ -1,5 +1,6 @@
 .card {
-  height: 40rem;
+  height: 35rem;
+  max-width: 22rem;
 }
 
 .card-heading {

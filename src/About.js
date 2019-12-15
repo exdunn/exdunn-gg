@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./About.css";
-import myPic from "./img/food.jpg";
+import myPic from "./img/profile.jpg";
 import $ from "jquery";
 
 class About extends Component {
@@ -12,7 +12,6 @@ class About extends Component {
           image={iconObjs[i].image}
           link={iconObjs[i].link}
           title={iconObjs[i].title}
-          description={iconObjs[i].description}
         />
       );
     }
@@ -92,7 +91,6 @@ class IconCard extends Component {
           </a>
         </span>
         <h4>{this.props.title}</h4>
-        <p>{this.props.description}</p>
       </div>
     );
   }
@@ -102,21 +100,21 @@ const iconObjs = [
   {
     image: "fab fa-github",
     link: "https://github.com/exdunn",
-    title: "Responsive",
+    title: "Collaborative",
     description:
       "the cat in the hat is black but the orange tastes like cream soda."
+  },
+  {
+    image: "fab fa-linkedin-in",
+    link: "https://www.linkedin.com/in/alex-dunn-46766554/",
+    title: "Connected",
+    description: "Looks great on any screen size!"
   },
   {
     image: "far fa-file",
     link: "https://www.linkedin.com/in/alex-dunn-46766554/",
 
-    title: "Responsive",
-    description: "Looks great on any screen size!"
-  },
-  {
-    image: "fab fa-linkedin-in",
-    link: "https://www.linkedin.com/in/alex-dunn-46766554/",
-    title: "Responsive",
+    title: "Experienced",
     description: "Looks great on any screen size!"
   }
 ];
