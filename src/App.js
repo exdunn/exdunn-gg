@@ -12,6 +12,7 @@ class App extends Component {
     for (var i = 0; i < popups.length; i++) {
       res.push(
         <Popup
+          id={"popup-" + i}
           demo={popups[i].demo}
           title={popups[i].title}
           body={popups[i].body}
@@ -41,7 +42,7 @@ const popups = [
     demo: ExaltLadderDemo,
     body:
       "Leaderboard displaying character info from Path of Exile. Orders characters by level and supports filtering by name, status, class, etc.",
-    btnName: "Source Code",
+    btnName: "Source",
     link: "https://github.com/exdunn/exalt-ladder"
   }
 ];

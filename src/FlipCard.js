@@ -2,6 +2,39 @@ import React, { Component } from "react";
 import "./FlipCard.css";
 
 class FlipCard extends Component {
+  getDemoButton() {
+    if (this.props.hasDemo) {
+      return (
+        <a
+          className="btn btn-light btn-lg"
+          href={"#popup-" + this.props.popupIndex}
+        >
+          Demo
+        </a>
+      );
+    }
+  }
+
+  getSourceButton() {
+    if (this.props.hasSource) {
+      return (
+        <a className="btn btn-light btn-lg" href={this.props.sourceUrl}>
+          Source
+        </a>
+      );
+    }
+  }
+
+  getVisitButton() {
+    if (this.props.hasVisit) {
+      return (
+        <a className="btn btn-light btn-lg" href={this.props.visitUrl}>
+          Visit
+        </a>
+      );
+    }
+  }
+
   render() {
     return (
       <div className="card border-0">
@@ -25,9 +58,9 @@ class FlipCard extends Component {
             <div className="card-description">
               <p>{this.props.text}</p>
             </div>
-            <a className="btn btn-light btn-lg" href="#popup">
-              {this.props.btnName}
-            </a>
+            {this.getDemoButton()}
+            {this.getVisitButton()}
+            {this.getSourceButton()}
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ class Popup extends Component {
 
   render() {
     return (
-      <div className="popup" id="popup">
+      <div className="popup" id={this.props.id}>
         <div className="popup-content">
           <div className="popup-left">
             <a href="#portfolio">

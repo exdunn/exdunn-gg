@@ -39,7 +39,7 @@ class About extends Component {
               <h4>React Ninja by night</h4>
               <p className="paragraph">
                 Passionate about leveraging modern frameworks and creating an
-                aesthetic user experience.
+                awesome user experience.
               </p>
             </div>
             <div className="col profile-content-2">
