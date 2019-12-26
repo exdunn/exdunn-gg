@@ -34,7 +34,7 @@ class Portfolio extends Component {
     return (
       <section className="section-portfolio" id="portfolio">
         <div className="container">
-          <h2>Projects</h2>
+          <h2 className="title">Projects</h2>
           <div className="row">{this.makeFlipCards()}</div>
         </div>
       </section>

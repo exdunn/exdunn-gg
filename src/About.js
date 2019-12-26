@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./About.css";
 import myPic from "./img/profile.jpg";
+import Skillbar from "./Skillbar";
 import $ from "jquery";
 
 class About extends Component {
@@ -13,6 +14,16 @@ class About extends Component {
           link={iconObjs[i].link}
           title={iconObjs[i].title}
         />
+      );
+    }
+    return res;
+  };
+
+  makeSkillbars = () => {
+    let res = [];
+    for (var i = 0; i < skillbarObjs.length; i++) {
+      res.push(
+        <Skillbar name={skillbarObjs[i].name} value={skillbarObjs[i].value} />
       );
     }
     return res;
@@ -43,15 +54,7 @@ class About extends Component {
               </p>
             </div>
             <div className="col profile-content-2">
-              <div className="skillbars">
-                <Skillbar name="C# / VB.NET" value="75%"></Skillbar>
-                <Skillbar name="Python" value="70%"></Skillbar>
-                <Skillbar name="JavaScript" value="70%"></Skillbar>
-                <Skillbar name="React" value="70%"></Skillbar>
-                <Skillbar name="CSS" value="60%"></Skillbar>
-                <Skillbar name="Bootstrap" value="60%"></Skillbar>
-                <Skillbar name="Unity" value="50%"></Skillbar>
-              </div>
+              <div className="skillbars">{this.makeSkillbars()}</div>
             </div>
           </div>
           <div className="row icons">{this.makeIcons()}</div>
@@ -62,23 +65,6 @@ class About extends Component {
 }
 
 export default About;
-
-class Skillbar extends Component {
-  render() {
-    return (
-      <div className="skillbar">
-        <h4>{this.props.name}</h4>
-        <div className="progress">
-          <div
-            className="progress-bar bg-info"
-            role="progressbar"
-            style={{ width: this.props.value }}
-          ></div>
-        </div>
-      </div>
-    );
-  }
-}
 
 class IconCard extends Component {
   state = {};
@@ -119,6 +105,16 @@ const iconObjs = [
   }
 ];
 
+const skillbarObjs = [
+  { name: "C# / VB.Net", value: "80%" },
+  { name: "JavaScript", value: "80%" },
+  { name: "Python", value: "75%" },
+  { name: "React", value: "70%" },
+  { name: "Node", value: "60%" },
+  { name: "Bootstrap / CSS", value: "70%" },
+  { name: "MongoDB", value: "60%" }
+];
+
 // checks whether the top/bottom of target in element is on the screen
 function isElementInViewport(elem, yOffset) {
   var $elem = $(elem);
@@ -152,6 +148,9 @@ function startAnimation() {
 
   if (!$elem_2.hasClass("start") && isElementInViewport($elem_2, 175)) {
     $elem_2.addClass("start");
+    $(".skillbars .skillbar > .progress > .progress-bar").each(function(i) {
+      $(this).width(skillbarObjs[i].value);
+    });
   }
 }
 

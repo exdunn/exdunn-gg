@@ -1,0 +1,15 @@
+.skillbar {
+  margin-bottom: 0.5rem;
+}
+
+.skillbar > h4 {
+  font-size: 1.2rem;
+}
+
+.progress {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.progress-bar {
+  transition: 1.2s width 0.5s ease-in-out !important;
+}
