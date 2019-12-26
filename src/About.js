@@ -22,7 +22,7 @@ class About extends Component {
     return (
       <section className="section-about" id="about">
         <div className="container">
-          <h2>About</h2>
+          <h2 className="title">About</h2>
           <div className="row">
             <div className="col profile-pic">
               <img src={myPic} />
@@ -119,7 +119,8 @@ const iconObjs = [
   }
 ];
 
-function isElementInViewport(elem) {
+// checks whether the top/bottom of target in element is on the screen
+function isElementInViewport(elem, yOffset) {
   var $elem = $(elem);
 
   var scrollTop = $(window).scrollTop();
@@ -128,24 +129,32 @@ function isElementInViewport(elem) {
   // Get the position of the element on the page.
   var elemTop = Math.round($elem.offset().top);
   var elemBottom = elemTop + $elem.height();
-  // console.log(elemTop, viewportBottom, elemBottom, viewportTop);
-  return elemTop < scrollBottom - 100 && elemBottom > scrollTop;
+  return elemTop < scrollBottom - yOffset && elemBottom > scrollTop;
 }
 
-// Check if it's time to start the animation.
-function checkAnimation() {
-  var $elem = $(".profile-content-2");
+function startAnimation() {
+  var $elem_title = $(".container > .title");
+  var $elem_pic = $(".profile-pic");
+  var $elem_1 = $(".profile-content-1");
+  var $elem_2 = $(".profile-content-2");
 
-  // If the animation has already been started
-  if ($elem.hasClass("start")) return;
+  if (!$elem_title.hasClass("start") && isElementInViewport($elem_title, 100)) {
+    $elem_title.addClass("start");
+  }
 
-  if (isElementInViewport($elem)) {
-    // Start the animation
-    $elem.addClass("start");
+  if (!$elem_pic.hasClass("start") && isElementInViewport($elem_pic, 175)) {
+    $elem_pic.addClass("start");
+  }
+
+  if (!$elem_1.hasClass("start") && isElementInViewport($elem_1, 175)) {
+    $elem_1.addClass("start");
+  }
+
+  if (!$elem_2.hasClass("start") && isElementInViewport($elem_2, 175)) {
+    $elem_2.addClass("start");
   }
 }
 
-// Capture scroll events
 $(window).scroll(function() {
-  checkAnimation();
+  startAnimation();
 });

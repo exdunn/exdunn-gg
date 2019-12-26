@@ -11,14 +11,33 @@
   color: #666666;
 }
 
-.container > h2 {
+.container > .title {
   font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 5rem;
+  visibility: hidden;
+}
+
+.container > .title.start {
+  visibility: visible;
+  animation: leftIn 0.75s ease-out;
+  animation-duration: 0.75s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: leftIn;
 }
 
 .profile-pic {
+  visibility: hidden;
+}
+
+.profile-pic.start {
+  visibility: visible;
   animation: bottomIn 0.75s ease-out;
   animation-duration: 0.75s;
   animation-timing-function: ease-out;
@@ -37,6 +56,11 @@
 }
 
 .profile-content-1 {
+  visibility: hidden;
+}
+
+.profile-content-1.start {
+  visibility: visible;
   margin-right: 5rem;
   margin-left: 5rem;
   animation: topIn 0.75s ease-out;
@@ -66,7 +90,12 @@
   margin: 0 auto;
 }
 
+.profile-content-2 {
+  visibility: hidden;
+}
+
 .profile-content-2.start {
+  visibility: visible;
   animation: bottomIn 0.75s ease-out;
   animation-duration: 0.75s;
   animation-timing-function: ease-out;
