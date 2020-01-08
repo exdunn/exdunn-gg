@@ -1,104 +1,31 @@
-.popup:target {
-  opacity: 1;
-  display: block;
-  visibility: visible;
+.close > span {
+  font-size: 30px;
 }
 
-.popup:target .popup-content {
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
+.modal-content {
+  border-radius: 0 !important;
 }
 
-.popup {
-  height: 100vh;
+.modal-body > .demo {
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 9999;
-  opacity: 0;
-  visibility: hidden;
+}
+
+.modal-footer {
+  text-align: left;
+  min-height: 200px;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.visit-btn {
   display: none;
-  transition: all 0.3s;
 }
 
-.popup-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  background-color: #fff;
-  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
-  display: table;
-  overflow: hidden;
-  opacity: 0;
-  transform: translate(-50%, -50%) scale(0.25);
-  transition: all 0.4s 0.1s;
-}
-
-.popup-left {
-  width: 70%;
-  display: table-cell;
-}
-
-.popup-image {
-  display: block;
-  width: 100%;
-}
-
-.popup-right {
-  width: 25%;
-  vertical-align: middle;
-  display: table-cell;
-  padding: 1rem 3rem;
-}
-
-.popup-right > h3 {
-  background-image: linear-gradient(to right bottom, #838383, #2e2e2e);
-  -webkit-background-clip: text;
-  color: transparent;
-  font-size: 2.5rem;
-}
-
-.popup-right > p {
-  font-size: 1.3rem;
-  color: #777;
-  margin-bottom: 2rem;
-}
-
-.popup-right > .btn {
-  border-radius: 10rem;
-  text-transform: uppercase;
-  background-image: linear-gradient(to right bottom, #838383, #2e2e2e);
-  color: white;
-  text-decoration: none;
-  padding: 1rem 4rem;
-  transition: all 0.2s;
-  font-size: 1.6rem;
-}
-
-.popup-right > .btn:hover {
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.21);
-  transform: translateY(-2px);
-  color: white;
-}
-
-.popup-close:link,
-.popup-close:visited {
-  color: #777;
-  position: absolute;
-  top: 2.5rem;
-  right: 2.5rem;
-  font-size: 3rem;
-  text-decoration: none;
+.visit-btn.has-visit {
+  border-right: #fff !important;
   display: inline-block;
-  transition: all 0.2s;
-  line-height: 1;
 }
 
-.popup-close:hover {
-  color: rgba(185, 19, 19, 0.911);
+.source-btn.has-visit {
+  border-left: #fff !important;
 }

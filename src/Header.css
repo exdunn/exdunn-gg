@@ -22,7 +22,7 @@ section:nth-of-type(1) {
       rgba(129, 0, 214, 0.7),
       rgba(0, 3, 187, 0.6)
     ),
-    url("./img/cp1.jpg");
+    url("./res/cp1.jpg");
   background-size: cover;
 }
 

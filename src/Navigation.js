@@ -5,8 +5,12 @@ import $ from "jquery";
 class Navigation extends Component {
   render() {
     const pages = ["home", "about", "portfolio"];
-    const navLinks = pages.map(page => {
-      return <a href={"#" + page}>{page}</a>;
+    const navLinks = pages.map((page, i) => {
+      return (
+        <a href={"#" + page} key={i}>
+          {page}
+        </a>
+      );
     });
 
     return (
