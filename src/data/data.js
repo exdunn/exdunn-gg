@@ -2,10 +2,11 @@ import Pantheon from "../res/pantheon.jpg";
 import Notes from "../res/notes.jpg";
 import Tree from "../res/tree.jpg";
 import Cinema from "../res/cinema.jpg";
-import ExaltLadderDemo from "../res/exalt ladder.gif";
+import ExaltLadderDemo from "../res/exalt-ladder.gif";
 import FabFlixDemo from "../res/fabflix.gif";
-import PatchNotesWhenDemo from "../res/patch notes when.gif";
-import TrieHuggerDemo from "../res/trie hugger.gif";
+import PatchNotesWhenDemo from "../res/patch-notes-when.gif";
+import TrieHuggerDemo from "../res/trie-hugger.gif";
+import resume from "../res/Alex Dunn Resume.pdf";
 
 export const projects = [
   {
@@ -70,8 +71,7 @@ export const icons = [
   },
   {
     image: "far fa-file",
-    link: "https://www.linkedin.com/in/alex-dunn-46766554/",
-
+    link: resume,
     title: "Experienced"
   }
 ];

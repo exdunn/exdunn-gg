@@ -76,7 +76,7 @@ class Flair extends Component {
     return (
       <div className="col icon-card">
         <span>
-          <a href={this.props.link} target="_">
+          <a href={this.props.link} target="_" download>
             <i className={this.props.image}></i>
           </a>
         </span>
