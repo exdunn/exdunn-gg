@@ -50,9 +50,9 @@ export const projects = [
 export const skills = [
   { name: "JavaScript", value: "80%" },
   { name: "Python", value: "80%" },
-  { name: "C# + VB.Net", value: "80%" },
+  { name: "VB.Net", value: "80%" },
   { name: "React", value: "75%" },
-  { name: "Bootstrap + CSS", value: "70%" },
+  { name: "Bootstrap", value: "70%" },
   { name: "Node", value: "60%" },
   { name: "MongoDB", value: "60%" }
 ];

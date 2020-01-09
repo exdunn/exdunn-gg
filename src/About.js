@@ -38,7 +38,7 @@ class About extends Component {
               <img src={myPic} />
             </div>
 
-            <div className="col-8 profile-content-2">
+            <div className="col-6 profile-content-2">
               <div className="skillbars">{this.makeSkillbars()}</div>
             </div>
           </div>
@@ -118,7 +118,9 @@ function startAnimation() {
 
   if (!$elem_2.hasClass("start") && isElementInViewport($elem_2, 175)) {
     $elem_2.addClass("start");
-    $(".skillbars .skillbar > .progress > .progress-bar").each(function(i) {
+    $(".skillbars .skillbar > .row > .progress > .progress-bar").each(function(
+      i
+    ) {
       $(this).width(skills[i].value);
     });
   }

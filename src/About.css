@@ -33,6 +33,7 @@
 }
 
 .profile-pic {
+  text-align: center;
   visibility: hidden;
 }
 
@@ -79,8 +80,8 @@
   text-align: center;
 }
 
-col > .paragraph {
-  font-size: 12pt;
+.col > p {
+  padding: 0 10%;
 }
 
 .row {

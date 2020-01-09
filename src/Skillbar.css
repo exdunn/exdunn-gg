@@ -1,13 +1,23 @@
-.skillbar {
-  margin-bottom: 0.5rem;
+.skillbar-row {
+  margin-bottom: 1rem;
 }
 
-.skillbar > h4 {
-  font-size: 1.2rem;
+.skillbar-name {
+  background-color: #00b8b8;
+  color: white;
+  padding: 0px 5px 0px 5px;
+  width: 15%;
+  float: left;
+  font-size: 11pt;
+  text-align: center;
+  height: 25px;
 }
 
 .progress {
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  float: right;
+  width: 70%;
+  border-radius: 0 !important;
+  height: 25px !important;
 }
 
 .progress-bar {
